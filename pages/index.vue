@@ -27,8 +27,7 @@ export default {
       const id = pizza.id
       if (this.order.length !== 0) {
         this.order.forEach((elem) => {
-          if (elem.id === id) console.log('есть пробитие')
-          else this.order.push(pizza)
+          if (!elem.id === id) this.order.push(pizza)
         })
       } else {
         this.order.push(pizza)

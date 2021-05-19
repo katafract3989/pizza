@@ -116,23 +116,11 @@ export default {
     totalPrice(price = null) {
       let additionalSum = _.cloneDeep(this.sumAdditional)
       this.currentPrice = price
-      // let sizeSelected = null
       this.additionalProduct.forEach(function (elem) {
         additionalSum = additionalSum + elem.price
       })
       const coefficient = _.cloneDeep(this.sizeSelected)
-      // if (coefficient === 0) {
-      //   sizeSelected = 'маленькая (24 см, 360г.)'
-      // } else if (coefficient === 15) {
-      //   sizeSelected = 'средняя (30 см, 540г.)'
-      // } else if (coefficient === 30) {
-      //   sizeSelected = 'большая (34 см, 710г.)'
-      // }
       this.pizza = { ...this.item }
-      // this.pizza.size = sizeSelected
-      // this.pizza.size_procent = coefficient
-      // this.pizza.additional = { ...this.additionalProduct }
-      // this.pizza.price = this.currentPrice
       const procent = (this.currentPrice / 100) * coefficient
       return price + additionalSum + Math.round(procent)
     },
