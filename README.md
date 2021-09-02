@@ -1,4 +1,4 @@
-# Nuxt starter pack
+# Pizza project
 ![image](https://user-images.githubusercontent.com/71668336/131868206-46f3b42d-9754-47fe-99fb-24bc25d666e3.png)
 
 ![image](https://user-images.githubusercontent.com/71668336/131868123-8cfff77c-8029-4b33-8629-064924d8bf2c.png)
